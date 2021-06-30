@@ -1,0 +1,54 @@
+@import "../../../public/styles/vars";
+@import "../../../public/styles/colors";
+@import "../../../public/styles/fonts";
+
+.buttonContainer {
+  width: 100%;
+
+  &__button {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 auto;
+
+    height: 40px;
+    position: relative;
+
+    font-size: $text_l_size;
+    font-weight: 600;
+    color: $white;
+    background-color: $accent_green;
+
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:disabled {
+      background-color: $text_gray_light;
+
+      &:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .buttonContainer__button {
+    margin: 0;
+    width: auto;
+    max-width: $button_max_width;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  a.buttonContainer__button {
+    display: inline-flex;
+  }
+}

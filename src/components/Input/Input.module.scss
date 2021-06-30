@@ -1,0 +1,58 @@
+@import "../../../public/styles/colors";
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  margin: 0 auto;
+
+  height: 40px;
+  position: relative;
+
+  &__input {
+    height: 100%;
+    width: 100%;
+
+    font-size: 16px;
+
+    border: 2px solid $text_gray_dark;
+    border-radius: 10px;
+    transition: border 150ms;
+    font-weight: 600;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    &:focus {
+      border: 2px solid $text_primary;
+      outline: none;
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+
+    font-size: 16px;
+    opacity: 1;
+    font-weight: 600;
+    color: $text_gray_dark;
+    transition: opacity 100ms ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  .inputContainer {
+    margin: 0;
+    max-width: 300px;
+  }
+}

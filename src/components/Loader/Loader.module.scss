@@ -1,0 +1,16 @@
+.loaderContainer {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}

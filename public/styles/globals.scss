@@ -1,0 +1,15 @@
+@import "materialIcons";
+@import "colors";
+@import "layout";
+
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $text_primary;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,17 @@
+.grid-container {
+  width: 92%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 481px) {
+  .grid-container {
+    width: 96%;
+    max-width: 720px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .grid-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../../public/styles/colors";
+
+.layoutContainer {
+  width: 100%;
+  height: 100%;
+
+  overflow: auto;
+  height: auto;
+  min-height: 100vh;
+
+  background-color: $background_primary;
+
+  &__header {
+    background-color: $background_secondary;
+  }
+
+  &__main {
+    background-color: $background_primary;
+  }
+}
